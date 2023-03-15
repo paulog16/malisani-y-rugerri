@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*header*/
+header{
+    
+    height: 100px;
+   background:#4B4A4A;
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*logo*/
+.logo{
+  
+    color:#E8610B
+
+  
+}
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.mostrar-menu,.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+     display: none; 
+    transition: 0.4s;
+
+}
+.mostrar-menu{
+     order: 1; 
+
+}
+.menu a:hover,.mostrar-menu,.esconder-menu{
+color: black;
+}
+#check{
+    display: none;
+}
+/*banner*/
+
+#banner{
+    padding: 0 20px;
+background: url(../imagenes/MALISANI\ Y\ RUGERRI.png);
+background-size: cover;
+    height: 100vh;
+}
+.contenido-banner{
+    color: black;
+  
+    padding: 500px 10px;
+ 
+}
+
+.contenido-banner a h2{
+  text-decoration: none;
+  color:blue;
+    font-size: 100px;
+    transition: all 0.9s;
+  
+
+}
+.contenido-banner a{
+    text-decoration: none;
+}
+.contenido-banner a h2:hover{
+    color: white;
+}
+
+/*servicios*/
+#servicios{
+    padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: url(../imagenes/fondo-servicio.jpg);
+  background-size: cover;
+}
+#servicios img{
+width: 300px;
+border-radius: 30%;
+
+}
+.chasis{
+    height: 150px;
+}
+#servicios div{
+    padding: 30px 50px;
+    color: white;
+   
+}
+#servicios div h3{
+    margin: 15px 0px;
+
+}
+#servicios div a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    transition: all 0.5s;
+    
+
+}
+#servicios div a:hover{
+    color:#E8610B;
+
+}
+
+/*formularo*/
+#formulario{
+    background: #E8610B;
+}
+.form{
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+
+}
+form{
+    text-align: center;
+    background: #E8610B;
+    padding: 30px 20px;
+    
+}
+form input{
+    border-radius: 10px;
+}
+.text{
+    padding: 30px;
+}
+.text textarea{
+    height: 50px;
+    border-radius: 10px;
+}
+.enviar{
+    border-radius: 0px;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+/*info wsp*/
+#info-wsp{
+    display: flex;
+    padding: 30px 0px;
+    margin-left: 20px;
+}
+/*info emial*/
+#info-email{
+    display: flex;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+/*creditos*/
+#creditos{
+    display: flex;
+padding: 20px 0;
+    background: lightgrey;
+    width: 100%;
+}
+#creditos h5{
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+ color: gray;
+  width: 100%;
+}
+#creditos h5 b{
+    color: black;
+}
+/*footer*/
+#footer{
+    padding: 10px 10px;
+    font-size: 20px;
+    text-align: center;
+    background: lightslategray;
+}
+
+
+/*responsible*/
+@media(max-width:768px){
+    /*header*/
+    .mostrar-menu,.esconder-menu{
+        display: block;
+        font-size: 50px;
+        
+    }
+    
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+       background-image: url(../imagenes/fondohamburguesa.jpg) ;
+       
+       background-size: cover;
+
+
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 40px;
+
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+
+    }
+    #check:checked~.menu{
+        right: 0;
+    }
+    .logo{
+        margin-left: 120px;
+        font-size: 30px;
+    }
+    .mostrar-menu{
+        margin-left: 88px;
+    }
+    /*banner*/
+ #banner{
+    background-size: cover;
+    height: 30vh;
+
+ }
+ .contenido-banner{
+    color: white;
+  width: 100%;
+    padding: 100px 0px;
+ padding-left: 1px;
+}
+.contenido-banner a h2{
+    font-size: 30px;
+    margin-left: 0px;
+}
+
+ /*servicios*/
+ #servicios{
+    flex-direction: column;
+    align-items: center;
+   background-size: cover;
+ }
+ #contenido-iconos{
+    flex-direction: column;
+ }
+ /*Formulario*/
+ .datos-form{
+    flex-direction: column;
+ }
+ .form{
+    font-size: 16px;
+ } 
+
+}

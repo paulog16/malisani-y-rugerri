@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background: grey;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 50px;
+
+}
+.titulo{
+    color: orange;
+    font-size: 50px;
+
+}
+.menu a{
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: all 0.6s;
+}
+.menu a:hover{
+    color: black;
+}
+.mostrar-menu,.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*banner*/
+#banner img{
+    width: 100%;
+}
+#banner a h2{
+    position: absolute;
+    top: 600px;
+    left: 15px;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.9s;
+}
+#banner a h2:hover{
+    color: black;
+}
+.servicios{
+    margin: 20px 40px;
+    background: lightgray;
+    height: 60vh;
+    border-radius: 20px;
+
+}
+.info img{
+    width: 300px;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+.info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+ 
+    padding-top: 90px;
+justify-content: center;
+
+}
+.ejes img{
+    width: 270px;
+}
+.info a{
+    color:black;
+    text-decoration: none;
+    border: 5px solid orange;
+    border-radius: 5px;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+.info a:hover{
+color: white;
+}
+.info p{
+padding: 10px;
+}
+.equipo img{
+    width: 300px;
+    height: 200px;
+}
+.masservicios img{
+    width: 310px;
+}
+.formulario{
+    margin: 20px 40px;
+    background: lightgray;
+    border-radius: 20px;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 60px;
+ 
+  
+   
+}
+form h3{
+    font-size: 40px;
+}
+.coso{
+display: flex;
+flex-direction: column;
+padding: 20px;
+width: 50%;
+}
+.coso label{
+    font-size: 20px;
+}
+.coso input{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.coso textarea{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#boton{
+    margin:10px 0px;
+}
+#info-taller{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: black;
+    color: white;
+}
+.info-taller{
+    padding: 10px 20px;
+}
+.info-celu,.info-email,.info-direccion,.info-ig{
+    display: flex;
+    
+}
+.info-celu,.info-email,.info-direccion,.info-ig {
+    padding-left: 20px;
+}
+.cont-info{
+    padding: 20px 500px;
+    display: flex;
+}
+.cont-info i,.cont-info h3{
+    padding: 20px 5px;
+}
+.cont-info a{
+    padding: 20px 5px;
+    color: white;
+}
+.titulo-info{
+    color: orange;
+    text-transform: uppercase;
+}
+#Footer{
+    margin: 20px 40px;
+    background: lightblue;
+}
+#creditos{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+#creditos i{
+    padding-left:  4px;
+}
+.menufinal{
+    background: gray;
+    margin: 0px 40px;
+}
+.menu-2{
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+  
+
+}
+.menu-2 a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+    font-size: 20px;
+    transition: all 0.6s;
+    
+   
+}
+.menu-2 a:hover{
+color: black;
+}
+
+
+@media (max-width:768px) {
+  
+
+    .esconder-menu,.mostrar-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+         width: 100%; 
+        height: 100vh;
+        background: url(./imagenes/fondohamburguesa.jpg);
+        background-size: cover;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+      
+       
+    }
+    .menu a{
+display: block;
+padding: 20px;
+
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    #check:checked~.menu{
+        right: 0;
+    }
+    /*banner*/
+#banner img{
+height: 30vh;
+width: 100%;
+
+
+}
+#banner a h2{
+    top: 200px;
+    font-size: 30px;
+}
+
+.servicios{
+    height: 250vh;
+    padding: 30px 0;
+}
+
+.info{
+    flex-direction: column;
+    padding-left: 10px;
+    padding: 20px;
+}
+.info img{
+    padding: 50px 0px;
+    border-radius: 50px;
+}
+
+.form h3{
+    font-size: 30px;
+}
+.coso{
+    width: 140%;
+    height: 70vh;
+}
+.cont-creditos h4{
+    padding: 5px 120px;
+font-size: 17px;
+
+  font-size: 10px;
+}
+.cont-info{
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.info-aparte{
+    padding: 20px 0px;
+  
+}
+.menu-2{
+    display: flex;
+    flex-direction: column;
+}
+}
